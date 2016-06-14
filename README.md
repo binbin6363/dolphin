@@ -18,7 +18,6 @@ and we just show some simple examples as follows:
         "net"
         "time"
 
-        "github.com/gansidui/gotcp/examples/generalexample"
     )
 
     // msgcenter
