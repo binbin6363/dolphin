@@ -5,8 +5,7 @@ import (
 	"errors"
 	"io"
 	"net"
-
-	"github.com/gansidui/gotcp"
+    "github.com/gansidui/gotcp"
 )
 
 // len + binarydata
@@ -39,7 +38,7 @@ func (this *BinaryProtocol) SetMaxPacketLen(maxLen uint32) {
     this.MaxPacketLen = maxLen
 }
 
-func (this *BinaryProtocol) ReadPacket(conn *net.TCPConn) (dolphin.Packet, error) {
+func (this *BinaryProtocol) ReadPacket(conn *net.TCPConn) (gotcp.Packet, error) {
 	var (
 		lengthBytes []byte = make([]byte, 4)
 		length      uint32

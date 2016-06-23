@@ -1,5 +1,8 @@
 package dolphin
 
+import (
+    "github.com/gansidui/gotcp"
+)
 
 
 type Processor struct {

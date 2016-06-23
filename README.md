@@ -3,7 +3,7 @@ dolphin is a high performance tcp net framework written in golang
 
 It is not ready for production use! just in development
 
-lower tcp use gotcp(https://github.com/gansidui/gotcp.git) and modify it.
+low-level tcp use gotcp(https://github.com/gansidui/gotcp.git).
 
 we are engaged in making it easier to build tcp service using golang,
 and we just show some simple examples as follows:

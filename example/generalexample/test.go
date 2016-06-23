@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/gansidui/gotcp/examples/generalexample"
+	"github.com/gansidui/gotcp"
 )
 
 // msgcenter

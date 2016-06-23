@@ -5,7 +5,6 @@ import (
     "errors"
     "io"
     "net"
-
     "github.com/gansidui/gotcp"
 )
 
@@ -39,7 +38,7 @@ func (this *LineProtocol) SetMaxPacketLen(maxLen uint32) {
     this.MaxPacketLen = maxLen
 }
 
-func (this *LineProtocol) ReadPacket(conn *net.TCPConn) (dolphin.Packet, error) {
+func (this *LineProtocol) ReadPacket(conn *net.TCPConn) (gotcp.Packet, error) {
     // once read 8 byte, until no data can read
     buff := make([]byte, this.MaxPacketLen)
 
